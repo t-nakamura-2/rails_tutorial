@@ -12,7 +12,10 @@ gem 'bcrypt', '3.1.12'
 
 gem 'bootstrap-sass', '3.3.7'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.3.6'
+gem 'sqlite3', :group => [:development, :test]
+
+# Use postgreSQL as the database for Active Record
+#
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
